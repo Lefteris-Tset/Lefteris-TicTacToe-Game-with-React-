@@ -1,13 +1,119 @@
-body {
+*{
+    font-family:'Times New Roman', Times, serif
+  }
+
+.header {
+  display: flex;
+  width: 1130px;
+  height: 60px;;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header h1 {
+  font-size: 35px;;
+  text-align: center;
+}
+
+#pointsX, #pointsO {
+  font-size: 1.8rem;
+  margin: 0;
+  min-width: 80px;
+}
+
+#pointsX {
+  color: #007bff;
+  text-align: left;
+}
+
+#pointsO {
+  color: #ff0000;
+  text-align: right;
+}
+
+.square.x-mark {
+  color: #007bff; 
+}
+
+.square.o-mark {
+  color: #ff0000;
+}
+
+.square.winning-square {
+  background-color: #8bc34a;
+  animation: pulse 1.5s infinite;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.status{
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.reset-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 8px 15px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.reset-btn:hover {
+  background-color: #29b93a;
+  transform: scale(1.05);
+}
+
+.reset-btn:active {
+  transform: scale(0.98);
+}
+
+.winner_msg{
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.square {
+  border: 2.4px solid #ffffff;
+  float: left;
+  line-height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  width: 155px;
+  height: 155px;
+  font-size: 60px;
+  display: flex;
+  text-align: center;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 10px;
 }
