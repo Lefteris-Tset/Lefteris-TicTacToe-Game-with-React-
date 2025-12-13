@@ -78,6 +78,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -112,9 +113,4 @@
   text-align: center;
   justify-content: center;
   font-weight: bold;
-}
-
-
-.status {
-  margin-bottom: 10px;
 }
